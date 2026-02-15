@@ -3,6 +3,23 @@ import pandas as pd
 import numpy as np
 import joblib
 
+# -------------------------------------------------
+# Download Sample Test Data
+# -------------------------------------------------
+st.subheader("📥 Download Sample Test Dataset")
+
+st.markdown(
+    """
+    You can download a **sample test CSV file** (without target column)
+    and directly upload it for predictions.
+    """
+)
+
+st.markdown(
+    "[⬇️ Click here to download test_data.csv](https://raw.githubusercontent.com/viku3991/ML_Assignment_2/main/test_data.csv)"
+)
+
+
 from sklearn.metrics import (
     accuracy_score,
     roc_auc_score,
